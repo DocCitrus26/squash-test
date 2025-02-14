@@ -1,0 +1,11 @@
+{
+    "url":{
+        "home" : "https://rtlhu-front.staging.6cloud.fr/",
+        "myAccountPage" : "https://rtlhu-front.staging.6cloud.fr/profilom",
+        "login" : "https://rtlhu-front.staging.6cloud.fr/bejelentkezes"
+    },
+    "cookiesPopup" : {
+        "title" : "Cookie (süti) tájékoztató",
+        "labelBtnAcceptAll" : "Elfogadom"
+    }
+}

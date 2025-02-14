@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "début script npx personnalisé"
+
+# Décaler (shift) les trois premiers arguments
+shift
+shift
+shift
+
+# Extraire le premier argument
+first_arg="$1"
+
+# Décomposer l'argument en préfixe et suffixe
+prefix="--grep="
+suffix="${first_arg#--grep=}"
+
+# Construire l'argument avec le suffixe entre apostrophes (simple quotes)
+quoted_first_arg="${prefix}'${suffix}'"
+
+# Décaler à nouveau pour ignorer le premier argument
+shift
+
+# Afficher la commande finale avant exécution (utile pour le débogage)
+echo ">>> $quoted_first_arg $@"
+
+# Définir la variable d'environnement pour Playwright
+export PLAYWRIGHT_JUNIT_OUTPUT_NAME="../$PLAYWRIGHT_JUNIT_OUTPUT_NAME"
+
+# Exécuter la commande avec eval pour préserver la structure des arguments
+eval "/usr/local/bin/npx playwright test $quoted_first_arg $@"
+
+echo "fin script"

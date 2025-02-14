@@ -1,0 +1,14 @@
+{
+    "url":{
+        "home" : "https://m6web-front.staging.6cloud.fr/",
+        "myAccountPage" : "https://m6web-front.staging.6cloud.fr/mon-compte",
+        "login" : "https://m6web-front.staging.6cloud.fr/connexion",
+        "registration" : "https://m6web-front.staging.6cloud.fr/inscription",
+        "offert" : "https://m6web-front.staging.6cloud.fr/offre/m6plusmax",
+        "film" : "https://m6web-front.staging.6cloud.fr/notre-univers-impitoyable-p_25526"
+    },
+    "cookiesPopup" : {
+        "title" : "Votre vie privée est importante pour nous",
+        "labelBtnAcceptAll" : "Accepter & Fermer: Accepter"
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "bedrock-automatic-testing-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx bddgen & npx playwright test",
+    "test:local": "pnpm bddgen; LOCAL=true pnpm playwright test",
+    "test:debug": "LOCAL=true npx playwright test --ui",
+    "test:squash": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.5.0",
+  "engines": {
+    "node": "^22",
+    "pnpm": "^9"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "dotenv": "^16.4.7",
+    "playwright-bdd": "^7.5.0",
+    "prettier": "3.4.2"
+  }
+}
